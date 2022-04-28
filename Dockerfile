@@ -23,6 +23,3 @@ RUN apk update && \
     apk del build-dependencies
 
 COPY . .
-
-# CMD ["rails", "server", "-b", "0.0.0.0"]
-CMD set -e && rm -f tmp/pids/server.pid && rails server -b 0.0.0.0
