@@ -29,5 +29,7 @@ module App
     config.add_autoload_paths_to_load_path = false
 
     config.api_only = true
+
+    config.autoload_paths += %W(#{config.root}/lib/validator)
   end
 end
